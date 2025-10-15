@@ -352,10 +352,10 @@ const Index = () => {
             About La Pizza Loca
           </h2>
           <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            At La Pizza Loca, we bring you authentic Italian flavors with a passion for perfection. 
-            Every pizza is crafted with traditional techniques, premium ingredients, and love. 
-            From our signature New York-style pies to handmade pasta and decadent desserts, 
-            we promise an unforgettable dining experience.
+            At La Pizza Loca, we bring authentic Italian flavors to Thiruvanmiyur, Chennai, with a passion for perfection. 
+            Every pizza is prepared using traditional techniques, premium ingredients, and a touch of love. 
+            From our signature New York-style pizzas to handmade pasta and rich desserts, 
+            we offer a truly unforgettable dining experience for every pizza lover.
           </p>
         </div>
       </section>
@@ -368,19 +368,23 @@ const Index = () => {
               <h3 className="text-3xl font-display font-bold mb-4 text-accent">Contact Us</h3>
               <div className="space-y-3 text-lg">
                 <p>📞 Phone: +91 97898 08325</p>
-                <p>📧 Email: info@lapizzaloca.com</p>
-                <p>📍 Address: Chennai, Tamil Nadu</p>
+                <p>📍 Address: Thiruvanmiyur, Chennai, Tamil Nadu</p>
               </div>
             </div>
             <div>
               <h3 className="text-3xl font-display font-bold mb-4 text-accent">Opening Hours</h3>
               <div className="space-y-2 text-lg">
-                <p>Monday - Sunday</p>
-                <p className="text-accent font-semibold">11:00 AM - 11:00 PM</p>
+                <p>Monday to Sunday: 12:00 PM – 11:00 PM</p>
               </div>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-primary-foreground/20 text-center">
+            <button 
+              onClick={() => window.location.href='https://lapizzaloca.dotpe.in/'}
+              className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-3 rounded-lg transition-all mb-4"
+            >
+              Order Now
+            </button>
             <p className="text-sm opacity-80">
               © 2025 La Pizza Loca. All rights reserved. Crafted with ❤️ and passion.
             </p>

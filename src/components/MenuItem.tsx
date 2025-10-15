@@ -10,11 +10,6 @@ interface MenuItemProps {
 }
 
 export const MenuItem = ({ name, price, description, customizable = false }: MenuItemProps) => {
-  const handleOrder = () => {
-    const message = `Hi, I'd like to order: ${name} (₹${price})`;
-    window.open(`https://wa.me/919789808325?text=${encodeURIComponent(message)}`, '_blank');
-  };
-
   return (
     <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border/50">
       <CardHeader className="pb-3">
@@ -31,14 +26,6 @@ export const MenuItem = ({ name, price, description, customizable = false }: Men
           <CardDescription className="text-sm leading-relaxed">{description}</CardDescription>
         </CardContent>
       )}
-      <CardFooter>
-        <Button 
-          onClick={handleOrder}
-          className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium transition-all"
-        >
-          ADD
-        </Button>
-      </CardFooter>
     </Card>
   );
 };
